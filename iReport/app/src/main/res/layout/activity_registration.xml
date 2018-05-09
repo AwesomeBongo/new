@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.widget.RelativeLayout
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.awesome.ireport.registration">
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Surname"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/othername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="other Name"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Gender"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="185dp"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date of Birth"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Telephone"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="255dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:hint="Address"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="50dp" />
+    <EditText
+        android:hint="Password"
+        android:textColorHint="@color/colorPrimary"
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="335dp"
+        android:layout_marginLeft="50dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+    <EditText
+        android:hint="Confirm Password"
+        android:textColorHint="@color/colorPrimary"
+        android:id="@+id/compass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="50dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="130dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle"
+        android:textSize="20sp"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="110dp"
+        android:text="Register"
+        android:onClick="userReg"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-440dp"
+        android:layout_marginStart="39dp">
+    </android.support.design.widget.TextInputLayout>
+
+</android.widget.RelativeLayout>
+</ScrollView>

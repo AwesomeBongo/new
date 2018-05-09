@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.awesome.ireport">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="iReport">
+            <intent-filter>
+                <action android:name="android.intent.action.Main" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".registration"
+            android:label="Register">
+            <intent-filter>
+                <action android:name="android.intent.action.registration" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".report"
+            android:label="Report">
+            <intent-filter>
+                <action android:name="android.intent.action.report" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".menu"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.menu" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".notification"
+            android:label="NOTIFICATIONS">
+            <intent-filter>
+                <action android:name="android.intent.action.notification" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

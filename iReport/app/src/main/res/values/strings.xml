@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">iReport</string>
+    <string name="title_activity_menu">MENU</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">NADMO</string>
+    <string name="nav_header_subtitle">Welcome to iReport</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="loginTitle">Login</string>
+    <string name="loginEmail">Email</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginText">Login</string>
+    <string name="registerLoginButton">Register</string>
+</resources>

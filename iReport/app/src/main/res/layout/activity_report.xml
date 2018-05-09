@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awesome.ireport.report"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Report"
+    android:textStyle="bold"
+    android:textSize="40sp"
+    android:layout_gravity="center_horizontal"/>
+
+<EditText
+    android:id="@+id/typeIncident"
+android:background="@drawable/edittextstyle"
+android:hint="Type of Incident"
+android:layout_marginTop="25dp"
+android:layout_width="300dp"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+    android:inputType="text" />
+<EditText
+    android:id="@+id/description"
+android:background="@drawable/edittextstyle"
+android:hint="Description of Incident"
+android:layout_marginTop="28dp"
+android:layout_width="300dp"
+android:layout_height="80dp"
+android:layout_gravity="center_horizontal"/>
+
+<LinearLayout
+android:layout_marginTop="28dp"
+android:layout_gravity="center_horizontal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+<EditText
+    android:id="@+id/location"
+    android:background="@drawable/edittextstyle"
+    android:hint="Location"
+    android:layout_marginRight="40dp"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/getLocation"
+    android:background="@drawable/buttonstyle"
+    android:textColor="@color/white"
+    android:text="GPS"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:onClick="getLocation"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/reportImage"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:maxHeight="60dp"
+            android:maxWidth="60dp" />
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:background="@drawable/buttonstyle"
+            android:textColor="@color/white"
+            android:text="take photo"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="82dp"
+            android:onClick="launchCamera"/>
+
+    </LinearLayout>
+
+<Button
+    android:id="@+id/sendReport"
+android:background="@drawable/buttonstyle"
+android:textColor="@color/white"
+android:text="send"
+android:textStyle="bold"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:layout_marginTop="10dp"
+android:layout_marginBottom="20dp"
+android:onClick="sendreport"/>
+
+    </LinearLayout>
+</ScrollView>
